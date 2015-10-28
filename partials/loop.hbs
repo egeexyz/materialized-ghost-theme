@@ -1,0 +1,20 @@
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+
+<div class="card {{post_class}}">
+ 
+	<div class="card-content">
+		<h2 class="card-title truncate"><a href="{{url}}">{{{title}}}</a></h2>
+		{{excerpt}}... 
+	</div>
+
+	<div class="card-action">
+        <div class="left-align">
+            Posted {{date published_at timeago="true"}} -
+            <a href="{{url}}">View Post</a>
+            {{! You can also put other things such as tags or social network share buttons here }}
+        </div>
+    </div>
+</div>
+
+{{/foreach}}
