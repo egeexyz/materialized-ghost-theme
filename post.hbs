@@ -1,0 +1,25 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+<div id="fb-root"></div>
+    <div class="section no-pad-bot" id="post-banner" class="{{post_class}}" >
+	  <div class="container">
+          <div class="card">
+              <div class="card-content">
+                      <span class="card-title blue-text">{{title}}</span>
+                      <p><b class="grey-text text-darken-3">Published on: {{date published}}</b></p>
+                  <br>
+                  <p>{{content}}</p>
+              </div>
+              <div class="card-action">
+                  {{! This is an ideal section for socal networking links and icons (such as Facebook or Twitter, etc) }}
+            </div>              
+          </div>
+	  </div>
+	</div>
+{{/post}}
