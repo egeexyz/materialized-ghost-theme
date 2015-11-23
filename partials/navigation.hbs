@@ -1,9 +1,25 @@
-<ul class="side-nav fixed right-aligned">
-    <br>
-    <li>
+{{! This is the header by which will appear at the top of every page used by this template.
+    It can be used for navigation or for branding for your title, logo, and or social buttons. }}
+
+<nav class="blue" role="navigation">
+    <div class="nav-wrapper container"><a href="{{@blog.url}}" class="brand-logo">Your Website Logo Or Name</a>
+        {{! This section is great for social media links }}
+        <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-bars"></i></a>
+    </div>    
+    <ul class="side-nav" id="mobile-nav">
+        {{#foreach navigation}}
+            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+    </ul>
+</nav>
+
+{{! This is the side-bar which can be used as navigation. It is responsive and becomes a hamburger when the window is shrunk. }}
+
+<nav class="side-nav fixed hide-on-med-and-down" role="navigation">  
+    <ul id="nav">
         {{! This is a good section for a brand logo or *gasp!* an advert }}
-    </li>
-    {{#foreach navigation}}
-        <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
-    {{/foreach}}
-</ul>
+        {{#foreach navigation}}
+            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+    </ul>
+</nav>

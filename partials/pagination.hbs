@@ -1,4 +1,6 @@
- <ul class="pagination">
+{{! This template controls how the "page arrow" icons appear at the bottom of each sections that are not posts. }}
+
+<ul class="pagination">
   {{#if prev}}
     <li class="waves-effect pagination-item newer"><a href="{{page_url prev}}"><i class="mdi-navigation-chevron-left"></i></a></li>
   {{else}}
@@ -9,5 +11,5 @@
   {{else}}
     <li class="disabled pagination-item older"><a href="#!"><i class="mdi-navigation-chevron-right"></i></a></li>
   {{/if}}
- </ul>
+</ul>
 <br>

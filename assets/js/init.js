@@ -6,6 +6,5 @@
 	$("pre").addClass("prettyprint linenums"),
         prettyPrint()    
 
-
   }); // end of document ready
 })(jQuery); // end of jQuery name space
