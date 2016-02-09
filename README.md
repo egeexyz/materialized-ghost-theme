@@ -1,6 +1,13 @@
-# materialized-ghost-theme
-An implementation of the Materialize framework for Ghost
+Materialzed - A theme for Ghost that implements MaterializeCSS
+===================================
 
-Just download as a zip and either upload it to your hosted Ghost instance or add it to your themes folder.
+This project serves as a learning tool for basic Vala development and game logic. It is not (and will probably never be) considered a finished product and is nowhere near ready for popular consumption.
 
-You can see a real-world implementation of it at my website here - http://egee.io/ . I've made minor changes to fit my own needs, and of course the source code is available under the GPLv2.
+In other words, use at your own risk and don't look at this project as a model Vala project.
+
+Install
+=======
+
+If you are looking to hack on the theme, download the source and extract it (keeping the folder structure) into your ../ghost/content/theme directory.
+
+If you simply want to install and deploy this to your existing Ghost site, download the zip file and upload it to your Ghost site as the active theme.
