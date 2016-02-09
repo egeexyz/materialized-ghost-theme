@@ -1,9 +1,7 @@
-Materialzed - A theme for Ghost that implements MaterializeCSS
+Materialized - A theme for Ghost that implements MaterializeCSS
 ===================================
 
-This project serves as a learning tool for basic Vala development and game logic. It is not (and will probably never be) considered a finished product and is nowhere near ready for popular consumption.
-
-In other words, use at your own risk and don't look at this project as a model Vala project.
+This is a free theme for Ghost that uses the awesome Materialize style sheet and front end framework. Materialized is licensed under the GPL so feel free to fork and hack at will!
 
 Install
 =======
